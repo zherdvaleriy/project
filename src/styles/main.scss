@@ -10,13 +10,27 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
+ 
+body{
+  background-color: rgb(238, 221, 195);
 
-h1 {
-  color: tomato;
-  text-align: center;
+  h1 {
+    color: tomato;
+    text-align: center;
+  }
+  p{
+    background-color: $primary;
+    margin: 1rem;
+    padding: 10px;
+    color: rgb(220, 200, 210);
+    
+    &::first-letter{
+      color: rgb(28, 29, 28);
+    }
+  }
+  &::first-letter{
+    color: rgb(17, 0, 255);
+  }
+  
 }
-p{
-  background-color: #ccc;
-  margin: 1rem;
-  padding: 10px;
-}
+
